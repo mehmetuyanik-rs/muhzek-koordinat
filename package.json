@@ -18,12 +18,12 @@
   ],
   "license": "MIT",
   "author": "Mehmet UYANIK (https://muhzekai.com)",
-  "homepage": "https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat#readme",
+  "homepage": "https://github.com/mehmetuyanik-rs/muhzek-koordinat#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat.git"
+    "url": "git+https://github.com/mehmetuyanik-rs/muhzek-koordinat.git"
   },
-  "bugs": "https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat/issues",
+  "bugs": "https://github.com/mehmetuyanik-rs/muhzek-koordinat/issues",
   "type": "module",
   "sideEffects": false,
   "main": "./dist/koordinat.cjs",

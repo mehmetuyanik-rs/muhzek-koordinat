@@ -1,6 +1,6 @@
 # muhzek-koordinat
 
-[![CI](https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat/actions/workflows/ci.yml/badge.svg)](https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat/actions/workflows/ci.yml)
+[![CI](https://github.com/mehmetuyanik-rs/muhzek-koordinat/actions/workflows/ci.yml/badge.svg)](https://github.com/mehmetuyanik-rs/muhzek-koordinat/actions/workflows/ci.yml)
 [![Lisans: MIT](https://img.shields.io/badge/lisans-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A518-brightgreen.svg)](package.json)
 
