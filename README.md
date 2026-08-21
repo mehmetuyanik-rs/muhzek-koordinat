@@ -1,5 +1,9 @@
 # muhzek-koordinat
 
+[![CI](https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat/actions/workflows/ci.yml/badge.svg)](https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat/actions/workflows/ci.yml)
+[![Lisans: MIT](https://img.shields.io/badge/lisans-MIT-blue.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%E2%89%A518-brightgreen.svg)](package.json)
+
 **Türkiye jeodezik koordinat dönüşümleri** — `proj4` üstüne, Türkiye
 haritacılık pratiğine göre hazırlanmış hazır tanımlar ve akıllı girdi
 ayrıştırıcı. [MuhzekAI](https://muhzekai.com)'nin
