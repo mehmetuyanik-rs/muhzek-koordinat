@@ -2,24 +2,92 @@
   "name": "muhzek-koordinat",
   "version": "0.1.0",
   "description": "Türkiye jeodezik koordinat dönüşümleri: ED50 ↔ ITRF96/TUREF, 3° TM (Gauss-Krüger) ve 6° UTM dilimleri, akıllı koordinat ayrıştırıcı (DMS/ondalık/metrik). Turkish geodetic datum transformations built on proj4.",
-  "keywords": ["geodesy", "proj4", "ed50", "itrf96", "turef", "utm", "gauss-kruger", "turkey", "koordinat", "jeodezi"],
+  "keywords": [
+    "geodesy",
+    "proj4",
+    "ed50",
+    "itrf96",
+    "turef",
+    "utm",
+    "gauss-kruger",
+    "coordinate-transformation",
+    "turkey",
+    "koordinat",
+    "jeodezi",
+    "harita"
+  ],
   "license": "MIT",
   "author": "Mehmet UYANIK (https://muhzekai.com)",
-  "repository": "github:mehmetuyanikrs-cpu/muhzek-koordinat",
+  "homepage": "https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat.git"
+  },
+  "bugs": "https://github.com/mehmetuyanikrs-cpu/muhzek-koordinat/issues",
   "type": "module",
+  "sideEffects": false,
+  "main": "./dist/koordinat.cjs",
+  "module": "./dist/koordinat.js",
+  "types": "./dist/koordinat.d.ts",
   "exports": {
-    ".": "./src/koordinat.ts",
-    "./crs": "./src/crs.ts",
-    "./yukseklik": "./src/yukseklik.ts"
+    ".": {
+      "import": {
+        "types": "./dist/koordinat.d.ts",
+        "default": "./dist/koordinat.js"
+      },
+      "require": {
+        "types": "./dist/koordinat.d.cts",
+        "default": "./dist/koordinat.cjs"
+      }
+    },
+    "./crs": {
+      "import": {
+        "types": "./dist/crs.d.ts",
+        "default": "./dist/crs.js"
+      },
+      "require": {
+        "types": "./dist/crs.d.cts",
+        "default": "./dist/crs.cjs"
+      }
+    },
+    "./yukseklik": {
+      "import": {
+        "types": "./dist/yukseklik.d.ts",
+        "default": "./dist/yukseklik.js"
+      },
+      "require": {
+        "types": "./dist/yukseklik.d.cts",
+        "default": "./dist/yukseklik.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
   },
   "scripts": {
-    "test": "tsx test/test.ts"
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx test/test.ts",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
     "proj4": "^2.15.0"
   },
   "devDependencies": {
+    "@types/node": "^22.10.0",
     "@types/proj4": "^2.5.5",
-    "tsx": "^4.19.0"
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
