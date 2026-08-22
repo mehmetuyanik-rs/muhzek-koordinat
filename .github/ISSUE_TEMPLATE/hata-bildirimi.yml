@@ -1,0 +1,61 @@
+name: Hata bildirimi
+description: Beklenmedik bir davranış, yanlış sonuç veya çökme bildir
+title: "[Hata]: "
+labels: ["hata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Teşekkürler! Aşağıdaki alanlar sorunu bende de üretebilmem için.
+        Güvenlik açığıysa **buradan değil**, reponun
+        *Security → Report a vulnerability* sekmesinden bildir.
+
+        _You're welcome to write in English._
+
+  - type: input
+    id: surum
+    attributes:
+      label: Paket ve sürüm
+      description: "Örn: muhzek-koordinat 0.1.0"
+      placeholder: "paket-adi 0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ne-oldu
+    attributes:
+      label: Ne oldu?
+      description: Gözlediğin davranış.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ne-bekliyordun
+    attributes:
+      label: Ne bekliyordun?
+      description: |
+        Sayısal bir sonuç bekliyorsan, mümkünse referans değeri ve kaynağını
+        da yaz (örn. TKGM/harita mühendisliği tablosu, AutoCAD çıktısı).
+    validations:
+      required: true
+
+  - type: textarea
+    id: kod
+    attributes:
+      label: Sorunu üreten en küçük kod
+      description: Çalıştırılabilir, kısa bir örnek. Otomatik olarak kod bloğuna alınır.
+      render: ts
+      placeholder: |
+        import { koordinatDonustur } from "muhzek-koordinat";
+        console.log(koordinatDonustur(/* ... */));
+    validations:
+      required: true
+
+  - type: input
+    id: ortam
+    attributes:
+      label: Ortam
+      description: Node sürümü, işletim sistemi, tarayıcı (varsa)
+      placeholder: "Node 22.14, Windows 11"
+    validations:
+      required: false

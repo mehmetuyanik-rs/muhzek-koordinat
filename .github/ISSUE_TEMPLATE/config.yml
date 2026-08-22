@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Güvenlik açığı bildirimi
+    url: https://github.com/mehmetuyanik-rs/.github/blob/main/SECURITY.md
+    about: Güvenlik açıklarını herkese açık issue olarak açma — özel bildirim yolunu kullan.
+  - name: Soru sormak / kullanım yardımı
+    url: https://github.com/mehmetuyanik-rs/.github/blob/main/CONTRIBUTING.md
+    about: Hata değil de "bunu nasıl yaparım" sorusuysa, önce katkı rehberine göz at.
+  - name: MuhzekAI
+    url: https://muhzekai.com
+    about: Bu paketlerin kullanıldığı araçlar.

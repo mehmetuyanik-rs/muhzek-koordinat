@@ -1,0 +1,54 @@
+name: Özellik önerisi
+description: Yeni bir yetenek veya iyileştirme öner
+title: "[Öneri]: "
+labels: ["öneri"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Öneri için teşekkürler. Kod yazmadan önce burada konuşmak
+        ikimizin de vaktini kurtarır.
+
+        _You're welcome to write in English._
+
+  - type: input
+    id: paket
+    attributes:
+      label: Hangi paket?
+      placeholder: "muhzek-koordinat"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sorun
+    attributes:
+      label: Hangi sorunu çözüyor?
+      description: |
+        Önerdiğin çözümden önce karşılaştığın gerçek durumu anlat —
+        şu an ne yapmak zorunda kalıyorsun?
+    validations:
+      required: true
+
+  - type: textarea
+    id: cozum
+    attributes:
+      label: Nasıl çalışsın?
+      description: Aklındaki API veya davranış. Örnek kod varsa çok iyi olur.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatifler
+    attributes:
+      label: Denediğin alternatifler
+      description: Başka bir kütüphane, elle çözüm ya da geçici yama denediysen.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: katki
+    attributes:
+      label: Katkı
+      options:
+        - label: Bu özelliği kendim geliştirip PR açabilirim
+          required: false
