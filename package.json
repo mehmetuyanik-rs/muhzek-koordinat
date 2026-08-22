@@ -77,11 +77,11 @@
     "prepublishOnly": "npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
-    "proj4": "^2.15.0"
+    "proj4": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
-    "@types/proj4": "^2.5.5",
+    "@types/proj4": "^2.19.0",
     "tsup": "^8.3.5",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0"
